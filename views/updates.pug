@@ -8,3 +8,15 @@ html
         h1 Update Custom Object
 
         a(href="/") Return to the homepage
+
+        form(action="/update-cobj" method="POST")
+            label(for="pet_name") Pet name
+            input(type="text" id="pet_name" name="pet_name")
+
+            label(for="pet_type") Pet type
+            input(type="text" id="pet_type" name="pet_type")
+
+            label(for="pet_color") Pet color
+            input(type="text" id="pet_color" name="pet_color")
+
+            button(type="submit") Submit
