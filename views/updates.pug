@@ -14,9 +14,15 @@ html
             input(type="text" id="pet_name" name="pet_name")
 
             label(for="pet_type") Pet type
-            input(type="text" id="pet_type" name="pet_type")
+            select(id="pet_type" name="pet_type")
+                option(value="cat") Cat
+                option(value="dog") Dog
+                option(value="other") Other
 
-            label(for="pet_color") Pet color
-            input(type="text" id="pet_color" name="pet_color")
+            label(for="color") Pet color
+            input(type="text" id="color" name="color")
+
+            label(for="age") Pet age
+            input(type="number" id="age" name="age")
 
             button(type="submit") Submit
