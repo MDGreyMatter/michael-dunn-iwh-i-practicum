@@ -1,0 +1,28 @@
+doctype html
+html
+    head
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        h1 Update Custom Object
+
+        a(href="/") Return to the homepage
+
+        form(action="/update-cobj" method="POST")
+            label(for="pet_name") Pet name
+            input(type="text" id="pet_name" name="pet_name")
+
+            label(for="pet_type") Pet type
+            select(id="pet_type" name="pet_type")
+                option(value="cat") Cat
+                option(value="dog") Dog
+                option(value="other") Other
+
+            label(for="color") Pet color
+            input(type="text" id="color" name="color")
+
+            label(for="age") Pet age
+            input(type="number" id="age" name="age")
+
+            button(type="submit") Submit
